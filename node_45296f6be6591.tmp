@@ -1,0 +1,69 @@
+alert('ola')
+function carregar(){
+    var msg=document.getElementById('msg')
+    var img = document.getElementById('img')
+    var data=new Date()
+    var hora=data.getHours()
+    var minuto=data.getMinutes()
+    msg.innerText=`a hora atual e de ${hora} : ${minuto}`
+    if (hora >=0 && hora <= 12 ){
+        msg.innerText= `bom dia senhor agora sao ${hora}:${minuto}`
+        document.body.style.background='aqua'
+        document.body.style.fontFamily='arial 15 15 '
+
+    } else if(hora >= 13 && hora <= 17) {
+    msg.innerText= `boa tarde senhor agora sao ${hora}:${minuto}`
+    document.body.style.background='blue' 
+
+    }else {
+        
+    
+        msg.innerText= `boa noite senhor agora sao ${hora}:${minuto}`
+        document.body.style.background='white'
+        document.body.style.color='white'
+    }
+
+}function verifica(){
+
+    var data=new Date()
+    var ano =data.getFullYear()
+    var fano =document.getElementById('ano')
+    if(fano.value.length == 0 || fano.value > ano ){
+        window.alert('erro')
+    }
+    
+
+
+    else{
+      
+        var radsex =document.getElementsByName('radsex')
+        var idade= ano - fano.value
+        var genero=''
+        var result= document.getElementById('res')
+       
+        if(radsex[0].checked){
+            genero='senhor'
+        }else{
+            genero='senhora'
+        }
+        result.innerText=`ola  ${genero} sua idade e de mais ou menos ${idade},certo?!`
+      
+    }
+    
+}
+function pesquisa(){
+    var pagina=document.getElementsByName('pagina')
+    var pag=''
+    if(pagina[0].checked){
+    
+        clik.innerHTML='<a href="trabalho/index.html" rel="next">pagina principal </a>'
+
+    }if(pagina[1].checked){
+        clik.innerHTML=`<a href="./2index.html"  rel="next"> site em criação <strong><em>kyn</em></strong></a>`
+    }if(pagina[2].checked){
+        clik.innerHTML=`<a href="./index.html"  rel="next"> site em criação <strong><em>sites-k</em></strong> </a>`
+    }
+    
+
+}
+

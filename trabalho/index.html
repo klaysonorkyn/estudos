@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../midiahtml/favicon-32x32.png" type="image/x-icon">
+    <title>dados kyn </title>
+    <link rel="stylesheet" href="../kynstyle.css">
+
+<body>
+    
+        <div id="principal">
+            <h1 id="ola">ola</h1>
+            <h1>site em construção </h1>
+            
+            
+            <h3>exemplo</h3>
+            <ol type="i">
+                        <li><a href="../3index.html" rel="next">com jarva</a></li>
+            
+                        <li><a href="../index.html"  rel="next"> site em criação <strong><em>sites-k</em></strong> </a></li>
+                        <li><a href="../2index.html"  rel="next"> site em criação <strong><em>kyn</em></strong></a></li>
+            
+        </div>
+    </main>
+        <main>
+            
+    </main>
+    <main>
+        
+            
+                <h1>audio </h1>
+            <div id="audio">
+                <h1>audio</h1>
+                <!--para coloca audio e necessario alguns parametros que vai depender do seu aparelho esse deu certo para mim e eu recomendoe o mp3-->
+                <!--controls mostra os controle, loop cria um loop no audio, metadta carrega so o basico, autoplay efetua ele automaticamente -->
+                <ol>
+                    <li>
+                       <p>musica do trem</p> <audio src="../midiahtml/trem.mp3.mp3" controls  >trem</audio>
+                    </li>
+                    <li>
+                       <p>musica do kimetsu do mhrap</p> <audio src="../midiahtml/kimetsu.mp3.mp3" controls >kimetsu</audio>
+                    </li>
+                    </ol>
+            </div>
+        
+    </main>
+<main>
+    <div id="video">
+        <h1>colocando video </h1>
+        
+        <h2>videos localizados no proprio pc </h2>
+        <main>
+            <video src="../midiahtml/kyn.mp4" width="300" controls></video>
+        </main>
+        
+        <h2>agora para decontrair vamos ver ela dançando...</h2>
+        <main>
+            <video src="../midiahtml/bia.mp4" width="300" poster="../midiahtml/azul2.capa.png" controls></video>
+        </main>
+        
+        <h2>video do youtube</h2>
+        <h3>cartoon network </h3>
+        <main>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/FC7kjoY0DF0" title="YouTube video player"
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+        </main>
+        
+          <p>
+              <button style="background-color: rgb(9, 242, 203);" ><a href="https://www.youtube.com/c/BRCartoonNetworkvideos" target="_blank"
+                rel="external">cartoon network </a></button>
+          </p>
+    </div>
+    <script>
+        
+      var princ=document.getElementById('ola')
+      
+     princ.addEventListener('mouseenter',entrar)
+      princ.addEventListener('click',entrar) 
+      princ.addEventListener('click',sair)
+      function entrar(){
+        princ.innerHTML=`ola senhor <button><a href="../3index.html" rel="next">com jarva</a></button>`
+
+      }
+      function sair(){
+        princ.innerHTML='tchau senhor'
+      }
+     
+
+        
+    </script>
+</main>
+</body>
+</html>

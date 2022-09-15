@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boot-site</title>
+    <link rel="stylesheet" href="./kynstyle.css">
+</head>
+<body>
+    <p>digite a senha</p>
+    <input type="password" name="senha" id="senha"> 
+    <input type="button" value="ve" onclick="ver()">
+    <div id="res">...</div>
+    <script>
+       function ver(){
+        var sen= document.getElementById ('senha')
+        var resp = document.getElementById ('res')
+        var senn=Number(sen.value)
+
+        if(senn == 2312199 ){
+
+            
+            resp.innerHTML='ola <p><a href="trabalho/index.html" rel="next">pagina principal </a></p>'
+            //resp.innerHTML=' a.innerHTML="<a href"trabalho/index.html " rel="external"></a>"'
+            
+            
+        } else {
+            resp.innerHTML+='<p>senha incorreta</p>'
+            
+           
+        }
+    }
+
+    </script>
+    
+</body>
+</html>

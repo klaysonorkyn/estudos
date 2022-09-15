@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kynstyle.css">
+    <title>Document1</title>
+</head>
+<body onload="carregar()">
+    <h1>hora do dia </h1>
+    <head>
+        <div id="msg">testando</div>
+
+    </head>
+    <section>
+        <div id="foto">
+            <img src="./trabalho/midiatrabalho/azulred.png" alt="" >
+            
+        </div>
+        <div>
+            <p>ano de nascimento 
+                <input type="number" name="ano" id="ano">
+            </p>
+            <p>sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">masculino</label>
+                <input type="radio" name="radsex" id="fem" checked>
+                <label for="fem">feminino</label>
+            </p>
+            <p><input type="button" value="verifica" onclick="verifica()"></p>
+        </div>
+        <div class="resul">preecha as informaçãos acima </div>
+        <div id="res"></div>
+          
+        <div id="pesquisa" >
+            <input type="radio" name="pagina" id="pagina1">
+            <label for="pagina1">pagina1</label>
+            <input type="radio" name="pagina" id="pagina2">
+            <label for="pagina2">pagina2</label>
+            <input type="radio" name="pagina" id="pagina3">
+            <label for="pagina3">pagina3</label>
+            <button onclick="pesquisa()">clik aqui</button>
+            <button id="clik"></button>
+
+        </div>      
+
+    </section>
+    <footer>
+        <p>&copy; kyn s.f </p>
+<script src="kynscript.js"></script>
+
+    </footer>
+
+</body>
+</html>

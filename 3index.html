@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> c/javascript</title>
+<link rel="stylesheet" href="./kynstyle.css"></head>
+<body>
+    <div id="area" >
+      interaja...
+    </div>
+    <p><input type="number" name="nm1" id="nm1"></p>
+    <p><input type="number" name="nm2" id="nm2"></p>
+    <input type="button" value="Somar" onclick ="somar()">
+    <input type="button" value="divicao" onclick="divicao()">
+    <input type="button" value="multiplica" onclick="multiplica()">
+    <input type="button" value="subtracao" onclick="subtracao()">
+    <input type="button" value="tabuada" onclick="tabuada()">
+    <div id="res">
+      
+      resultado
+
+    </div>
+   
+<!--somando em java -->
+   
+
+
+     <script>
+     var a = window.document.getElementById('area')
+     //addEventListener siguinfica que quando acontecer essa função ele vai fazer  vareavel tal
+     a.addEventListener('click',clicar)
+     a.addEventListener('mouseenter',entrar)
+     a.addEventListener('mouseout', sair)
+    
+      function clicar(){
+        
+        a.innerText ='clicou'
+        a.style.background='blue'
+        a.style.color='white'
+        
+      }
+            function entrar (){
+        a.innerText='ta dentro'
+        a.style.background='aqua'
+        a.style.color='blue'
+      
+      }
+
+      function sair(){
+        a.innerText='ta fora'
+        a.style.background='red'
+        a.style.color='green'
+      }
+      
+      function somar(){
+        var num1=document.getElementById('nm1')
+        var num2=document.getElementById('nm2')
+        var res=document.getElementById('res')
+
+        var nume1=Number(num1.value)
+        var nume2=Number(num2.value)
+        var s=nume1+nume2
+        res.innerText=`${s}`
+
+
+      }
+      function subtracao(){
+       var num1=document.getElementById('nm1')
+       var num2=document.getElementById('nm2')
+       var res=document.getElementById('res')
+
+       var nume1=Number(num1.value)
+       var nume2=Number(num2.value)
+       var s=nume1-nume2
+        res.innerText=`${s}`
+
+
+      }
+      function divicao(){
+        var num1=document.getElementById('nm1')
+        var num2=document.getElementById('nm2')
+        var res=document.getElementById('res')
+
+        var nume1=Number(num1.value)
+        var nume2=Number(num2.value)
+        var s=nume1/nume2
+        res.innerText=`${s}`
+
+
+      }
+      function multiplica(){
+        var num1=document.getElementById('nm1')
+        var num2=document.getElementById('nm2')
+        var res=document.getElementById('res')
+        var nume1=Number(num1.value)
+        var nume2=Number(num2.value)
+        var s=nume1*nume2
+        res.innerText=`${s}`
+
+
+      }
+      function tabuada(){
+        var t1=document.getElementById('nm1')
+        var t2=document.getElementById('nm2')
+        var re=document.getElementById('res')
+        var tb1=Number(t1.value)
+        var tb2=Number(t2.value)
+        var r=Number(re.value)
+
+        for(var k = tb1 ; k <tb2; k +=r){
+          res.innerHTML+=`${k}`
+        }
+      }
+        
+     </script>
+  
+
+</body>
+</html>
